@@ -103,14 +103,24 @@ body {
 }
 
 @media (max-width: 768px) {
+	.header {
+		position: fixed;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	}
 	.icon-menu {
 		display: block;
+	}
+	.menu__body {
+		display: none;
 	}
 }
 
 @media (max-width: 700px) {
-.menu__body {
+.mob-menu {
   width: 100%;
   right: -100%;
- }
+  -webkit-transition: right 0.8s;
+  -o-transition: right 0.8s;
+  transition: right 0.8s; }
 }
