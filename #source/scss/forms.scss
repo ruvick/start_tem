@@ -11,7 +11,7 @@
 	display: inline-block;
 	padding: 0px 0px;
 	&:hover{}
-	&.fw{width: 100%;}
+	&.fw{width: 100%;} 
 }
 //</BUTTONS>====================================================================================================
 
@@ -68,6 +68,28 @@ input[type=text],input[type=email],input[type=tel],textarea{-webkit-appearance:n
 textarea.input{
 	resize:none;
 	padding: 5px 10px;
+}
+//</INPUT>====================================================================================================
+
+//<INPUT (+ -)>====================================================================================================
+.number {
+	max-width: 100px;
+	width: 100%;
+	border: 0.4px solid #c7c9cb;
+}
+.number input,
+.plus,
+.minus {
+	width: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 20.7px;
+}
+.number input {
+	padding: 2px 10px 0 10px;
+	color: #5a5b5e;
 }
 //</INPUT>====================================================================================================
 
@@ -142,7 +164,7 @@ textarea.input{
 	}
 }
 
-.form-range {}
+.form-range {} 
 .form__info{position:absolute;width:60px;height:60px;right:0;top:0;line-height:60px;text-align:center;color:#888;z-index: 2;font-size: 14px;
 	@media (max-width:$md3+px){width: 50px;height: 50px;line-height:50px;}
 }

@@ -1,0 +1,192 @@
+// Карточки товаров ====================================================================================================================================================
+.prod-card {
+	// .prod-card__body
+	// margin: 0 -8.5px;
+	justify-content: space-between;
+	&__body {
+		// max-width: 252px;
+		// width: 100%;
+		// padding: 20px 20px 18px 22px;
+		padding: 15px 20px 15px 22px;
+		flex-direction: column;
+		border: 0.4px solid #c7c9cb;
+		flex: 0 1 19%;
+	}
+	// .prod-card__link
+	&__link {
+		// margin: 0 auto 32px auto;
+		margin: 0 auto 13px auto;
+		flex: 1 1 auto;
+		overflow: hidden;
+		position: relative;
+		img {
+			max-width: 100%;
+			max-height: 195px;
+			flex: 0 0 175px;
+		}
+	}
+	&__sale {
+		position: absolute;
+		z-index: 5;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 500;
+		width: 40px;
+		height: 31px;
+		background: #8abb2a;
+		color: #fff;
+		margin-top: 4px;
+	}
+	&__text {
+		h4 {
+			line-height: 18px;
+			margin-bottom: 10px;
+			// .prod-card__manuf
+		}
+	}
+	&__manuf {
+		line-height: 18px;
+		color: #8a7165;
+		margin-bottom: 10px;
+	}
+	// .prod-card__avail
+	&__avail {
+		line-height: 18px;
+		color: #d3820f;
+		margin-bottom: 14.5px;
+	}
+	// .prod-card__price-item
+	&__price-item {
+		justify-content: space-between;
+		align-items: center;
+	}
+	// .prod-card__price
+	&__price {
+		font-size: 20px;
+		font-weight: 600;
+	}
+}
+
+
+// Карточка вывода цены с выбором колличества ====================================================================================================================================================
+.select-prod__price {
+	max-width: 332px;
+	width: 100%;
+}
+
+.selc-price {
+	max-width: 330px;
+	width: 100%;
+	border: 0.4px solid #c7c9cb;
+	padding: 25px 13px;
+	margin-bottom: 28px;
+}
+
+.selc-price__number {
+	padding: 0 10px;
+}
+.selc-price__numer {
+	font-size: 46px;
+	font-weight: bold;
+	line-height: 35px;
+	margin-bottom: 20px;
+}
+.selc-price__numer.rub:after {
+	font-size: 35px;
+	font-weight: bold;
+}
+.selc-price__avail {
+	font-size: 12px;
+	line-height: 23px;
+	color: #96999c;
+	margin-bottom: 9px;
+}
+.selc-price__avail:before {
+	content: "";
+	float: left;
+	width: 13px;
+	height: 13px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMy4zNDEiIGhlaWdodD0iMTIuNTM3IiB2aWV3Qm94PSIwIDAgMTMuMzQxIDEyLjUzNyI+DQogIDxwYXRoIGlkPSLQmtC+0L3RgtGD0YBfMTY3IiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCAxNjciIGQ9Ik01NDg1Ljk0Nyw0NjYuMzI2bDUuNjg1LDcuOTU4LDYuODIxLTExLjM2OCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTU0ODUuNTQgLTQ2Mi42NTkpIiBmaWxsPSJub25lIiBzdHJva2U9IiNkMzgyMGYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxIi8+DQo8L3N2Zz4NCg==");
+	margin-right: 10px;
+	margin-top: 3px;
+}
+
+.selc-price .number {
+	max-width: 105px;
+	width: 100%;
+	height: 38px;
+	border: 0.4px solid #c7c9cb;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.selc-price__act {
+	padding: 17.3px 14px 11.5px 14px;
+	border-top: 0.4px solid #c7c9cb;
+	border-bottom: 0.4px solid #c7c9cb;
+	margin-bottom: 12px;
+}
+.selc-price__bascet {
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20.5px;
+}
+.selc-price__bascet .btn {
+	padding: 11.5px 32.5px;
+	border-radius: 20px;
+}
+.selc-price .plus,
+.selc-price .minus,
+.selc-price .number input {
+	width: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 20.7px;
+}
+.selc-price .number input {
+	padding: 2px 10px 0 10px;
+	color: #5a5b5e;
+}
+
+.selc-price___cheap {
+	font-size: 12px;
+	color: #96999c;
+	width: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.selc-price___cheap:after {
+	content: "";
+	float: right;
+	width: 16px;
+	height: 16px;
+	margin-left: 6px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNS44ODkiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNS44ODkgMTYiPg0KICA8ZyBpZD0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YxfMjg1IiBkYXRhLW5hbWU9ItCh0LPRgNGD0L/Qv9C40YDQvtCy0LDRgtGMIDI4NSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTU1ODQuNzQ1IC01NjIuNDIxKSI+DQogICAgPGVsbGlwc2UgaWQ9ItCt0LvQu9C40L/RgV8zMyIgZGF0YS1uYW1lPSLQrdC70LvQuNC/0YEgMzMiIGN4PSI3Ljc0NCIgY3k9IjcuOCIgcng9IjcuNzQ0IiByeT0iNy44IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NTg0Ljk0NSA1NjIuNjIxKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzdjOWNiIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMC40Ii8+DQogICAgPHRleHQgaWQ9Il8iIGRhdGEtbmFtZT0iPyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTU5MC4wMDQgNTc0Ljc3OSkiIGZpbGw9IiM1YTViNWUiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSJMYXRvLVJlZ3VsYXIsIExhdG8iPjx0c3BhbiB4PSIwIiB5PSIwIj4/PC90c3Bhbj48L3RleHQ+DQogIDwvZz4NCjwvc3ZnPg0K");
+}
+
+.selc-price__char-list {
+	padding-left: 14px;
+}
+.selc-price__char-list li {
+	margin-bottom: 10px;
+}
+.selc-price__char-list li:last-child {
+	margin-bottom: 15px;
+}
+.selc-price__char-link {
+	padding-left: 14px;
+	color: #d3820f;
+}
+
+.select-prod__callback {
+	padding: 25px 20px 32px 25px;
+	background: #e0e1e3;
+}
