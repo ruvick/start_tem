@@ -38,6 +38,81 @@
 </div>
 
 
+<!-- Строка поиска -->
+<div class="header__search search">
+	<input type="text" placeholder="Поиск по сайту" class="search__input input">
+	<button type="submit" tabindex="2" id="searchsubmit" class="sub-search" value=""></button>
+</div>
+<button class="mob-search"></button>
+
+
+<!-- Информационные блоки с логотипами Стили в карточках-->
+<div class="advant__row d-flex">
+
+	<div class="advant__item advant-icon-01">
+		<h4>Обширный <br>
+			каталог
+		</h4>
+		<p>
+			Безналичный расчет, 
+			электронными деньгами, 
+			наличными или картой при 
+			курьерской доставке.
+		</p>
+	</div>
+
+	<div class="advant__item advant-icon-02">
+		<h4>Оплачивайте, <br>
+			как удобно вам
+		</h4>
+		<p>
+			Безналичный расчет, 
+			электронными деньгами, 
+			наличными или картой при 
+			курьерской доставке.
+		</p>
+	</div>
+
+	<div class="advant__item advant-icon-03">
+		<h4>Простая система <br>
+			возврата и обмена
+		</h4>
+		<p>
+			Безналичный расчет, 
+			электронными деньгами, 
+			наличными или картой при 
+			курьерской доставке.
+		</p>
+	</div>
+
+	<div class="advant__item advant-icon-04">
+		<h4>2 года <br>
+			гарантии
+		</h4>
+		<p>
+			Безналичный расчет, 
+			электронными деньгами, 
+			наличными или картой при 
+			курьерской доставке.
+		</p>
+	</div>
+
+	<div class="advant__item advant-icon-05">
+		<h4>Шоу-рум <br>
+			у вас дома
+		</h4>
+		<p>
+			Безналичный расчет, 
+			электронными деньгами, 
+			наличными или картой при 
+			курьерской доставке.
+		</p>
+	</div>
+
+</div>
+
+
+
 <!-- Ползунки -->
 <form class="block__form form-block" action="#">
 	<div class="form-block__item">
@@ -58,90 +133,92 @@
 
 <!-- Табы Табуляция Вкладки -->
 <div class="block__tabs tabs">
- <nav class="block__nav">
-  <div class="block__navitem tab__navitem active">Первая</div>
-  <div class="block__navitem tab__navitem">Вторая</div>
- </nav>
- <div class="block__items">
-  <div class="block__item tab__item active">Описание 1</div>
-  <div class="block__item tab__item">Описание 2</div>
- </div>
+	<nav class="block__nav">
+		<div class="block__navitem tab__navitem active">Первая</div>
+		<div class="block__navitem tab__navitem">Вторая</div>
+	</nav>
+	<div class="block__items">
+		<div class="block__item tab__item active">Описание 1</div>
+		<div class="block__item tab__item">Описание 2</div>
+	</div>
 </div>
 
 
 <!-- Спойлер -->
 <div class="block__spollers spollers">
- <div class="spollers__item">
-  <div class="spollers__title spoller closeall">Открой меня</div>
-  <div class="spollers__text">
-   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-  </div>
- </div>
+	<div class="spollers__item">
+		<div class="spollers__title spoller closeall">Открой меня</div>
+		<div class="spollers__text">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+		</div>
+	</div>
 
- <div class="spollers__item">
-  <div class="spollers__title spoller closeall">Открой меня</div>
-  <div class="spollers__text">
-   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
- </div>
-</div>
-
-
-<!-- Сниппеты - Чекбоксы -->
-<form class="block__form form-block" action="#">
- <div class="form-block__item">
-  <div class="check">
-   <input type="checkbox" value="1" name="form[]">
-  </div>
- </div>
-</form>
+	<div class="spollers__item">
+		<div class="spollers__title spoller closeall">Открой меня</div>
+		<div class="spollers__text">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+		</div>
+	</div>
 
 
-<!-- Inputs -->
-<form class="block__form form-block" action="#">
- <div class="form-block__item">
-  <input autocomplete="off" type="text" name="form[]" data-value="Имя" class="input req">
-  <button class="btn">Отправить</button>
- </div>
-</form>
+	<!-- Сниппеты - Чекбоксы -->
+	<form class="block__form form-block" action="#">
+		<div class="form-block__item">
+			<div class="check">
+				<input type="checkbox" value="1" name="form[]">
+			</div>
+		</div>
+	</form>
 
 
-<!-- Радиокнопки -->
-<form class="block__form form-block" action="#">
- <div class="form-block__item">
-  <div class="options">
-   <div class="option active">
-    Текст
-    <input type="radio" value="1" name="form[type]">
-   </div>
-   <div class="option">
-    Текст 2
-    <input type="radio" value="2" name="form[type]">
-   </div>
-  </div>
- </div>
-</form>
+	<!-- Inputs -->
+	<form class="block__form form-block" action="#">
+		<div class="form-block__item">
+			<input autocomplete="off" type="text" name="form[]" data-value="Имя" class="input req">
+			<button class="btn">Отправить</button>
+		</div>
+	</form>
 
 
-<!-- Рейтинг -->
-<form class="block__form form-block" action="#">
- <div class="form-block__item">
- <div class="rating-block">
-  <div class="rating edit">
-   <div class="rating__line"></div>
-   <div class="rating__activeline"></div>
-   <input value="4.3" type="hidden" name="rating" />
-   <div class="stars">
-    <span class="star"><i>Ужасно</i></span>
-    <span class="star"><i>Плохо</i></span>
-    <span class="star"><i>Нормально</i></span>
-    <span class="star"><i>Хорошо</i></span>
-    <span class="star"><i>Отлично</i></span>
-   </div>
-  </div>
-  <div class="rating__value">4.3</div>
- </div>
- </div>
-</form> 
+	<!-- Радиокнопки -->
+	<form class="block__form form-block" action="#">
+		<div class="form-block__item">
+			<div class="options">
+				<div class="option active">
+					Текст
+					<input type="radio" value="1" name="form[type]">
+				</div>
+				<div class="option">
+					Текст 2
+					<input type="radio" value="2" name="form[type]">
+				</div>
+			</div>
+		</div>
+	</form>
+
+
+	<!-- Рейтинг -->
+	<form class="block__form form-block" action="#">
+		<div class="form-block__item">
+			<div class="rating-block">
+				<div class="rating edit">
+					<div class="rating__line"></div>
+					<div class="rating__activeline"></div>
+					<input value="4.3" type="hidden" name="rating" />
+					<div class="stars">
+						<span class="star"><i>Ужасно</i></span>
+						<span class="star"><i>Плохо</i></span>
+						<span class="star"><i>Нормально</i></span>
+						<span class="star"><i>Хорошо</i></span>
+						<span class="star"><i>Отлично</i></span>
+					</div>
+				</div>
+				<div class="rating__value">4.3</div>
+			</div>
+		</div>
+	</form> 
+
+
 
 <!-- <form class="block__form form-block" action="#">
  <div class="form-block__item">
