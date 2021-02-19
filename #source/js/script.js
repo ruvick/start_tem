@@ -362,40 +362,40 @@ if (navigator.appVersion.indexOf("Mac") != -1) {
 	if ($('.scroll-body').length > 0) { scroll(); }
 }
 
-/*
-function scrollwhouse(){
-		var scs=100;
-		var mss=50;
-		var bns=false;
-	if(isMobile.any()){
-		scs=10;
-		mss=1;
-		bns=true;
-	}
-	var opt={
-		cursorcolor:"#afafaf",
-		cursorwidth: "5px",
-		background: "",
-		autohidemode:false,
-		railalign: 'left',
-		cursoropacitymax: 1,
-		bouncescroll:bns,
-		cursorborderradius: "0px",
-		scrollspeed:scs,
-		mousescrollstep:mss,
-		directionlockdeadzone:0,
-		cursorborder: "0px solid #fff",
-	};
-	return opt;
-}
-$('.whouse-content-body').niceScroll('.whouse-content-scroll',scrollwhouse());
-$('.whouse-content-body').scroll(function(event) {
-		var s=$(this).scrollTop();
-		var r=Math.abs($(this).outerHeight()-$('.whouse-content-scroll').outerHeight());
-		var p=s/r*100;
-	$('.whouse-content__shadow').css({opacity:1-1/100*p});
-});
-*/
+
+// function scrollwhouse(){
+// 		var scs=100;
+// 		var mss=50;
+// 		var bns=false;
+// 	if(isMobile.any()){
+// 		scs=10;
+// 		mss=1;
+// 		bns=true;
+// 	}
+// 	var opt={
+// 		cursorcolor:"#afafaf",
+// 		cursorwidth: "5px",
+// 		background: "",
+// 		autohidemode:false,
+// 		railalign: 'left',
+// 		cursoropacitymax: 1,
+// 		bouncescroll:bns,
+// 		cursorborderradius: "0px",
+// 		scrollspeed:scs,
+// 		mousescrollstep:mss,
+// 		directionlockdeadzone:0,
+// 		cursorborder: "0px solid #fff",
+// 	};
+// 	return opt;
+// }
+// $('.whouse-content-body').niceScroll('.whouse-content-scroll',scrollwhouse());
+// $('.whouse-content-body').scroll(function(event) {
+// 		var s=$(this).scrollTop();
+// 		var r=Math.abs($(this).outerHeight()-$('.whouse-content-scroll').outerHeight());
+// 		var p=s/r*100;
+// 	$('.whouse-content__shadow').css({opacity:1-1/100*p});
+// });
+
 
 
 if ($('.t,.tip').length > 0) {

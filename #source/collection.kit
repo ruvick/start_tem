@@ -40,17 +40,120 @@
 
 <!-- Ползунки -->
 <form class="block__form form-block" action="#">
+	<div class="form-block__item">
+		<div class="category-params-item-price">
+			<div class="category-params-item-price-table table">
+				<div class="cell">
+					<input type="text" name="form[]"id="rangefrom">
+				</div>
+				<div class="cell">
+					<input type="text" name="form[]"id="rangeto">
+				</div>
+			</div>
+			<div id="range" class="category-params-item-price-range"></div>
+		</div>
+	</div>
+</form> 
+
+
+<!-- Табы Табуляция Вкладки -->
+<div class="block__tabs tabs">
+ <nav class="block__nav">
+  <div class="block__navitem tab__navitem active">Первая</div>
+  <div class="block__navitem tab__navitem">Вторая</div>
+ </nav>
+ <div class="block__items">
+  <div class="block__item tab__item active">Описание 1</div>
+  <div class="block__item tab__item">Описание 2</div>
+ </div>
+</div>
+
+
+<!-- Спойлер -->
+<div class="block__spollers spollers">
+ <div class="spollers__item">
+  <div class="spollers__title spoller closeall">Открой меня</div>
+  <div class="spollers__text">
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+  </div>
+ </div>
+
+ <div class="spollers__item">
+  <div class="spollers__title spoller closeall">Открой меня</div>
+  <div class="spollers__text">
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+ </div>
+</div>
+
+
+<!-- Сниппеты - Чекбоксы -->
+<form class="block__form form-block" action="#">
  <div class="form-block__item">
-  <div class="category-params-item-price">
-   <div class="category-params-item-price-table table">
-    <div class="cell">
-     <input type="text" name="form[]"id="rangefrom">
-    </div>
-    <div class="cell">
-     <input type="text" name="form[]"id="rangeto">
-    </div>
-    <div class="category-params-item-price-range"></div>
+  <div class="check">
+   <input type="checkbox" value="1" name="form[]">
+  </div>
+ </div>
+</form>
+
+
+<!-- Inputs -->
+<form class="block__form form-block" action="#">
+ <div class="form-block__item">
+  <input autocomplete="off" type="text" name="form[]" data-value="Имя" class="input req">
+  <button class="btn">Отправить</button>
+ </div>
+</form>
+
+
+<!-- Радиокнопки -->
+<form class="block__form form-block" action="#">
+ <div class="form-block__item">
+  <div class="options">
+   <div class="option active">
+    Текст
+    <input type="radio" value="1" name="form[type]">
+   </div>
+   <div class="option">
+    Текст 2
+    <input type="radio" value="2" name="form[type]">
    </div>
   </div>
  </div>
+</form>
+
+
+<!-- Рейтинг -->
+<form class="block__form form-block" action="#">
+ <div class="form-block__item">
+ <div class="rating-block">
+  <div class="rating edit">
+   <div class="rating__line"></div>
+   <div class="rating__activeline"></div>
+   <input value="4.3" type="hidden" name="rating" />
+   <div class="stars">
+    <span class="star"><i>Ужасно</i></span>
+    <span class="star"><i>Плохо</i></span>
+    <span class="star"><i>Нормально</i></span>
+    <span class="star"><i>Хорошо</i></span>
+    <span class="star"><i>Отлично</i></span>
+   </div>
+  </div>
+  <div class="rating__value">4.3</div>
+ </div>
+ </div>
 </form> 
+
+<!-- <form class="block__form form-block" action="#">
+ <div class="form-block__item">
+  <select name="form[]" class="form-block">
+    <option value="1" selected="selected">Пункт 1</option>
+    <option value="2">Пункт 2</option>
+    <option value="3">Пункт 3</option>
+    <option value="4">Пункт 4</option>
+  </select>
+ </div>
+ <div class="form-block__item">
+  <button type="submit" class="form-block__btn btn">Задать вопрос</button>.
+ </div>
+</form> -->
+

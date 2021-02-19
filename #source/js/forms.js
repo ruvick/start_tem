@@ -14,7 +14,7 @@ function forms(){
 				cursorwidth: "12px",
 				background: "",
 				autohidemode:false,
-				bouncescroll:false,
+				bouncescroll:false, 
 				cursorborderradius: "10px",
 				scrollspeed:scs,
 				mousescrollstep:mss,

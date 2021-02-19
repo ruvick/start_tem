@@ -142,6 +142,7 @@ body {
   flex-direction: column; }
 
 section {
+  padding: 50px 0;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto; }
@@ -323,7 +324,7 @@ textarea.input {
 
 .rating-block {
   display: table;
-  font-size: 0; }
+  font-size: 0px; }
 
 .rating {
   display: inline-block;

@@ -123,7 +123,7 @@ textarea.input{
 //</OPTIONS>====================================================================================================
 
 //<RATING>====================================================================================================
-.rating-block{display: table;font-size: 0;}
+.rating-block{display: table;font-size: 0px;}
 .rating{display: inline-block;position: relative;vertical-align: middle;
 	&.edit .star{cursor: pointer;}
 	.star{width: 17px;height: 14px;display: inline-block;position: relative;z-index: 3;}
