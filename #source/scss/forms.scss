@@ -11,7 +11,7 @@
 	display: inline-block;
 	padding: 0px 0px;
 	&:hover{}
-	&.fw{width: 100%;} 
+	&.fw{width: 100%;}  
 }
 //</BUTTONS>====================================================================================================
 
@@ -58,7 +58,7 @@
 	}
 	.select-title__arrow{position: absolute;top:0;
 		right: 0px;width:45px;height:100%;
-		background: url('../img/icons/select-arrow.svg') center no-repeat;
+		background: url('../img/icons/triangl-black.svg') center no-repeat;
 	}
 	.select-title__value{
 		color: #000;

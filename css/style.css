@@ -141,8 +141,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column; }
 
-section {
-  padding: 50px 0;
+.page {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto; }
@@ -229,7 +228,7 @@ section {
     right: 0px;
     width: 45px;
     height: 100%;
-    background: url("../img/icons/select-arrow.svg") center no-repeat; }
+    background: url("../img/icons/triangl-black.svg") center no-repeat; }
   .select .select-title__value {
     color: #000;
     font-weight: 700;

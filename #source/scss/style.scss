@@ -11,7 +11,7 @@
 	src: local("☺"), url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.ttf") format("truetype"),
 	url("../fonts/Lato-Light.svg") format("svg");
 	font-weight: 300;
-	font-style: normal;  
+	font-style: normal;   
 }
 
 @font-face {
@@ -124,9 +124,9 @@ body {
 	&.loaded {
 	}
 }
-section {
-	padding: 50px 0;
-	flex: 1 1 auto;}
+.page {
+	flex: 1 1 auto; 
+}
 //</ОБОЛОЧКА>===========================================================================================================
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
