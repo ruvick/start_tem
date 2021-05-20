@@ -29,6 +29,24 @@ if (iconMenu) {
 	});
 }
 
+
+// // Закрытие моб меню при клике на якорную ссылку
+$('.menu__list a').on('click', function () {
+	if ($('.icon-menu').css('display') != 'none') {
+		$(".icon-menu").trigger("click");
+	}
+});
+
+
+// // Плавный скролл якорных ссылок
+//     $(".menu__list").on("click","a", function (event) {
+//         event.preventDefault();
+//         var id  = $(this).attr('href'),
+//             top = $(id).offset().top;
+//         $('body,html').animate({scrollTop: top}, 1500);
+//     });
+
+
 // Открытие ПК меню при наведении до 1024px
 if (document.body.clientWidth > 1024) {
 	function hideMenu() {
