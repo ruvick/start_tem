@@ -196,6 +196,9 @@ body {
 	.menu__body {
 		display: none;
 	}
+	.header__callback {
+    margin-right: 20px;
+	}
 }
 
 @media (max-width: 700px) {
@@ -206,3 +209,12 @@ body {
 		-o-transition: right 0.8s;
 		transition: right 0.8s; }
 	}
+
+@media (max-width: 515px) {
+	.header__callback {
+    display: none; }
+	.mob-callback__phone {
+    display: flex; 
+		margin-right: 25px;
+	}
+}
