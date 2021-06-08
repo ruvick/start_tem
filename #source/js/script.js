@@ -69,53 +69,6 @@ if (document.body.clientWidth > 1024) {
 	});
 }
 
-// Маска телефона на JS
-// function setCursorPosition(pos, elem) {
-// 	elem.focus();
-// 	if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
-// 	else if (elem.createTextRange) {
-// 		var range = elem.createTextRange();
-// 		range.collapse(true);
-// 		range.moveEnd("character", pos);
-// 		range.moveStart("character", pos);
-// 		range.select()
-// 	}
-// }
-// function mask(event) {
-// 	var matrix = "+7 (___) ___ ____",
-// 		i = 0,
-// 		def = matrix.replace(/\D/g, ""),
-// 		val = this.value.replace(/\D/g, "");
-// 	if (def.length >= val.length) val = def;
-// 	this.value = matrix.replace(/./g, function (a) {
-// 		return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
-// 	});
-// 	if (event.type == "blur") {
-// 		if (this.value.length == 2) this.value = ""
-// 	} else setCursorPosition(this.value.length, this)
-// };
-// var input = document.querySelector("#tel");
-// input.addEventListener("input", mask, false);
-// input.addEventListener("focus", mask, false);
-// input.addEventListener("blur", mask, false);
-
-// var inputTel = document.querySelector("#tel2");
-// inputTel.addEventListener("input", mask, false);
-// inputTel.addEventListener("focus", mask, false);
-// inputTel.addEventListener("blur", mask, false);
-
-// var inputTelpopup = document.querySelector("#tel3");
-// inputTelpopup.addEventListener("input", mask, false);
-// inputTelpopup.addEventListener("focus", mask, false);
-// inputTelpopup.addEventListener("blur", mask, false);
-
-// var inputTelpopup = document.querySelector("#tel4");
-// inputTelpopup.addEventListener("input", mask, false);
-// inputTelpopup.addEventListener("focus", mask, false);
-// inputTelpopup.addEventListener("blur", mask, false);
-
-
-
 
 // Slider на главной
 $('.info-sl__slider').slick({
@@ -191,6 +144,51 @@ var inputmask_phone = { "mask": "+9(999)999-99-99" };
 jQuery("input[type=tel]").inputmask(inputmask_phone);
 
 
+// Маска телефона на JS
+// function setCursorPosition(pos, elem) {
+// 	elem.focus();
+// 	if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+// 	else if (elem.createTextRange) {
+// 		var range = elem.createTextRange();
+// 		range.collapse(true);
+// 		range.moveEnd("character", pos);
+// 		range.moveStart("character", pos);
+// 		range.select()
+// 	}
+// }
+// function mask(event) {
+// 	var matrix = "+7 (___) ___ ____",
+// 		i = 0,
+// 		def = matrix.replace(/\D/g, ""),
+// 		val = this.value.replace(/\D/g, "");
+// 	if (def.length >= val.length) val = def;
+// 	this.value = matrix.replace(/./g, function (a) {
+// 		return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+// 	});
+// 	if (event.type == "blur") {
+// 		if (this.value.length == 2) this.value = ""
+// 	} else setCursorPosition(this.value.length, this)
+// };
+// var input = document.querySelector("#tel");
+// input.addEventListener("input", mask, false);
+// input.addEventListener("focus", mask, false);
+// input.addEventListener("blur", mask, false);
+
+// var inputTel = document.querySelector("#tel2");
+// inputTel.addEventListener("input", mask, false);
+// inputTel.addEventListener("focus", mask, false);
+// inputTel.addEventListener("blur", mask, false);
+
+// var inputTelpopup = document.querySelector("#tel3");
+// inputTelpopup.addEventListener("input", mask, false);
+// inputTelpopup.addEventListener("focus", mask, false);
+// inputTelpopup.addEventListener("blur", mask, false);
+
+// var inputTelpopup = document.querySelector("#tel4");
+// inputTelpopup.addEventListener("input", mask, false);
+// inputTelpopup.addEventListener("focus", mask, false);
+// inputTelpopup.addEventListener("blur", mask, false);
+
 
 //Валидация телефона + Отправщик
 jQuery('.header__form button').click(function (e) {
@@ -227,6 +225,50 @@ jQuery('.header__form button').click(function (e) {
 	});
 
 });
+
+
+//Валидация телефона + Отправщик нескольких одинаковых окон на странице
+// jQuery(".form__btn").click(function (e) {
+// 	e.preventDefault();
+
+// 	let formmsg = jQuery(this).data("formmsg");
+// 	let name = $(this).siblings('input[name=name]').val();
+// 	let persPhone = $(this).siblings('input[name=tel]').val();
+// 	let time = $(this).siblings('input[name=time]').val();
+// 	if ((persPhone == "") || (persPhone.indexOf("_") > 0)) {
+// 		$(this).siblings('input[name=name]').css("background-color", "#ff91a4")
+// 		$(this).siblings('input[name=tel]').css("background-color", "#ff91a4")
+// 		return;
+// 	}
+// 	console.log('persPhone: ', persPhone);
+// 	console.log('formmsg: ', formmsg);
+
+// 	var jqXHR = jQuery.post(
+// 		"sender/send.php",
+// 		{
+// 			formmsg: formmsg,
+// 			name: name,
+// 			phone: persPhone,
+// 			time: time,
+// 		}
+
+// 	);
+
+
+// 	jqXHR.done(function (responce) {
+// 		console.log(responce);
+// 		document.location.href = "../thank-you.html";
+// 		jQuery('input[name=name]').val("");
+// 		jQuery('input[name=tel]').val("");
+// 		jQuery('textarea[name=text]').val("");
+// 	});
+
+// 	jqXHR.fail(function (responce) {
+// 		console.log(responce);
+// 		alert("Произошла ошибка попробуйте позднее!");
+// 	});
+
+// });
 
 
 $(".fancybox").fancybox();
