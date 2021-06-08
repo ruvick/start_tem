@@ -47,12 +47,12 @@ $('.menu__list a').on('click', function () {
 
 
 // // Плавный скролл якорных ссылок
-//     $(".menu__list").on("click","a", function (event) {
-//         event.preventDefault();
-//         var id  = $(this).attr('href'),
-//             top = $(id).offset().top;
-//         $('body,html').animate({scrollTop: top}, 1500);
-//     });
+// $(".menu__list, .mob-menu__list, .footer__menu").on("click", "a", function (event) {
+// 	event.preventDefault();
+// 	var id = $(this).attr('href'),
+// 		top = $(id).offset().top;
+// 	$('body,html').animate({ scrollTop: top }, 1000);
+// });
 
 
 // Открытие ПК меню при наведении до 1024px
@@ -68,6 +68,54 @@ if (document.body.clientWidth > 1024) {
 		$(".header__menu").on("mouseleave", hideMenu);
 	});
 }
+
+// Маска телефона на JS
+// function setCursorPosition(pos, elem) {
+// 	elem.focus();
+// 	if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+// 	else if (elem.createTextRange) {
+// 		var range = elem.createTextRange();
+// 		range.collapse(true);
+// 		range.moveEnd("character", pos);
+// 		range.moveStart("character", pos);
+// 		range.select()
+// 	}
+// }
+// function mask(event) {
+// 	var matrix = "+7 (___) ___ ____",
+// 		i = 0,
+// 		def = matrix.replace(/\D/g, ""),
+// 		val = this.value.replace(/\D/g, "");
+// 	if (def.length >= val.length) val = def;
+// 	this.value = matrix.replace(/./g, function (a) {
+// 		return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+// 	});
+// 	if (event.type == "blur") {
+// 		if (this.value.length == 2) this.value = ""
+// 	} else setCursorPosition(this.value.length, this)
+// };
+// var input = document.querySelector("#tel");
+// input.addEventListener("input", mask, false);
+// input.addEventListener("focus", mask, false);
+// input.addEventListener("blur", mask, false);
+
+// var inputTel = document.querySelector("#tel2");
+// inputTel.addEventListener("input", mask, false);
+// inputTel.addEventListener("focus", mask, false);
+// inputTel.addEventListener("blur", mask, false);
+
+// var inputTelpopup = document.querySelector("#tel3");
+// inputTelpopup.addEventListener("input", mask, false);
+// inputTelpopup.addEventListener("focus", mask, false);
+// inputTelpopup.addEventListener("blur", mask, false);
+
+// var inputTelpopup = document.querySelector("#tel4");
+// inputTelpopup.addEventListener("input", mask, false);
+// inputTelpopup.addEventListener("focus", mask, false);
+// inputTelpopup.addEventListener("blur", mask, false);
+
+
+
 
 // Slider на главной
 $('.info-sl__slider').slick({
