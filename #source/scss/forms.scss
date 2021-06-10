@@ -98,6 +98,7 @@
 
 //<INPUT (inp+tab)>====================================================================================================
 input[type=text],input[type=email],input[type=tel],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+input[type=range]{cursor: pointer;}
 .input, .input__phone{
 	// border: 1px solid #000;
 	border-radius: 25px;
