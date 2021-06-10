@@ -34,9 +34,27 @@ window.addEventListener('click', e => { // при клике в любом ме�
 	}
 })
 
+// Плавная прокрутка
+const smotScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
+
+smotScrollElems.forEach(link => {
+	link.addEventListener('click', (event) => {
+		event.preventDefault()
+		console.log(event);
+
+		const id = link.getAttribute('href').substring(1)
+		console.log('id : ', id);
+
+		document.getElementById(id).scrollIntoView({
+			behavior: 'smooth'
+		});
+	})
+});
+
 
 // Ползунок выбора цены
 const priceEl = document.querySelector(".price");
+
 function changePrice(price) {
 	priceEl.innerText = price;
 	console.log(price);
