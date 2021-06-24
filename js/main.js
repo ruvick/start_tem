@@ -68,16 +68,6 @@ function changePrice(price) {
 };
 
 
-
-
-
-
-
-
-
-
-
-
 	// Маска телефона на JS
 	// function setCursorPosition(pos, elem) {
 	// 	elem.focus();
