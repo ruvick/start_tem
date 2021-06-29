@@ -32,8 +32,9 @@
 						</ul>
 					</nav>
 					<div class="header__search search">
-						<form role="search" method="get" id="searchform" class="search" action="https://shop.1voentorg.ru/">
-							<input type="text" placeholder="Поиск" class="search__input input">
+						<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ) ?>">
+							<input type="text" placeholder="Поиск" class="search__input input"
+								value="<?php echo get_search_query() ?>" name="s" id="s">
 							<button type="submit" tabindex="2" id="searchsubmit" class="sub-search" value=""></button>
 						</form>
 					</div>
