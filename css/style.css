@@ -1118,6 +1118,14 @@ body.ie .ibg img {
   -ms-flex-align: center;
   align-items: center; }
 
+#scroll-progress {
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 4px;
+  background: #7983ff;
+  z-index: 10000; }
+
 .footer {
   background: #86A298; }
   .footer__container {

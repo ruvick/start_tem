@@ -51,6 +51,19 @@ smotScrollElems.forEach(link => {
 	})
 });
 
+
+// Полоса прокрутки в шапке
+const scrollProgress = document.getElementById('scroll-progress');
+const height =
+	document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+window.addEventListener('scroll', () => {
+	const scrollTop =
+		document.body.scrollTop || document.documentElement.scrollTop;
+	scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+});
+
+
 // Строка поиска на мобилках 
 let mobsearch = document.querySelector(".mob-search");
 let headsearch = document.querySelector(".header__search");
@@ -99,6 +112,7 @@ BarIconElems.forEach((btn, index) => {
 		}
 	})
 })
+
 
 
 	// Маска телефона на JS
