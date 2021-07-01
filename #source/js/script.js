@@ -69,6 +69,38 @@ function changePrice(price) {
 };
 
 
+// Поочередное открытие нескольких блоков меню, табы, либо что то еще
+const BarIconElems = document.querySelectorAll('.sidebar__menu-open');
+const BarLinkIconElems = document.querySelectorAll('.sidebar__menu-icon');
+const BarSubMenuElems = document.querySelectorAll('.sidebar__submenu');
+
+BarIconElems.forEach((btn, index) => {
+	btn.addEventListener('click', () => {
+
+		if (!btn.classList.contains('sidebar__menu-icon_active')) {
+
+			BarSubMenuElems.forEach((BarSubMenuElem) => {
+				BarSubMenuElem.classList.remove('active')
+			});
+			BarIconElems.forEach((BarIconElem) => {
+				BarIconElem.classList.remove('sidebar__menu-icon_active')
+			});
+			BarLinkIconElems.forEach((BarLinkIconElem) => {
+				BarLinkIconElem.classList.remove('sidebar__menu-icon_active')
+			});
+
+			BarSubMenuElems[index].classList.add('active')
+			BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
+			btn.classList.add('sidebar__menu-icon_active')
+		} else {
+			BarSubMenuElems[index].classList.remove('active')
+			BarLinkIconElems[index].classList.remove('sidebar__menu-icon_active')
+			btn.classList.remove('sidebar__menu-icon_active')
+		}
+	})
+})
+
+
 	// Маска телефона на JS
 	// function setCursorPosition(pos, elem) {
 	// 	elem.focus();
