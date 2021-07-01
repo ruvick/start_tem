@@ -57,6 +57,14 @@
 							<li><a href="#" class="menu__link">Контакты</a></li>
 						</ul>
 					</nav>
+					<div class="header__search search">
+						<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ) ?>">
+							<input type="text" placeholder="Поиск" class="search__input input"
+								value="<?php echo get_search_query() ?>" name="s" id="s">
+							<button type="submit" tabindex="2" id="searchsubmit" class="sub-search" value=""></button>
+						</form>
+					</div>
+					<button class="mob-search"></button>
 				</div>
 
 				<div class="header__callback d-flex">
@@ -64,6 +72,8 @@
 					<p>Звонить с 08:00 до 22:00</p>
 				</div>
 				<a href="tel:84951700000" class="mob-callback__phone"></a>
+
+				<a href="#" class="bascket-icon"><span class="bascket-icon__number bascet_counter">1</span></a>
 
 				<div class="menu__icon icon-menu">
 					<span></span>
@@ -86,6 +96,7 @@
 					</div>
 					<input type="range" id="age" value="100" min="100" max="1000" oninput="changePrice(this.value)"
 						onchange="changePrice(this.value)">
+
 
 					<!-- 				<form class="header__form" action="#">
 					<input type="text" name="name" placeholder="Имя" class="input">

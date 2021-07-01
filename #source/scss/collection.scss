@@ -67,9 +67,10 @@
 		font-weight: 600;
 	}
 }
+// =============================================================================================================================================================
 
 
-// Карточка вывода цены с выбором колличества ====================================================================================================================================================
+// Карточка вывода цены с выбором колличества 
 .select-prod__price {
 	max-width: 332px;
 	width: 100%;
@@ -190,6 +191,7 @@
 	padding: 25px 20px 32px 25px;
 	background: #e0e1e3;
 }
+// ================================================================================================================================================================
 
 
 // Информационные блоки с логотипами
@@ -236,6 +238,8 @@
 .advant-icon-05:before {
  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4NCiAgPGcgaWQ9ItCh0LPRgNGD0L/Qv9C40YDQvtCy0LDRgtGMXzkxIiBkYXRhLW5hbWU9ItCh0LPRgNGD0L/Qv9C40YDQvtCy0LDRgtGMIDkxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM2MCAtMjUzNS43ODEpIj4NCiAgICA8ZyBpZD0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YxfODkiIGRhdGEtbmFtZT0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YwgODkiPg0KICAgICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF81NyIgZGF0YS1uYW1lPSLQmtC+0L3RgtGD0YAgNTciIGQ9Ik0xNDA3LDI1NTAuNzgxaC00NmExLDEsMCwwLDEsMC0yaDQ2YTEsMSwwLDAsMSwwLDJaIiBmaWxsPSIjZDM4MjBmIi8+DQogICAgPC9nPg0KICAgIDxnIGlkPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjF85MCIgZGF0YS1uYW1lPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjCA5MCI+DQogICAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzU4IiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCA1OCIgZD0iTTE0MDgsMjU1MS4zODZ2LTEuNmMwLS4wMjYtLjAxMy0uMDQ4LS4wMTUtLjA3M2EuODguODgsMCwwLDAtLjAzOS0uMTkzLjk0Mi45NDIsMCwwLDAtLjA2OS0uMTljLS4wMTItLjAyMi0uMDEyLS4wNDctLjAyNS0uMDY4bC04LTEzYy0uMDIxLS4wMzQtLjA1My0uMDUyLS4wNzYtLjA4MmExLjA0NCwxLjA0NCwwLDAsMC0uMTM5LS4xNDkuOTY1Ljk2NSwwLDAsMC0uMTU4LS4xMDYuODUuODUsMCwwLDAtLjE2OC0uMDc2Ljk0My45NDMsMCwwLDAtLjItLjA0MmMtLjAzNywwLS4wNjktLjAyMS0uMTA3LS4wMjFoLTMwYy0uMDM4LDAtLjA3LjAxOC0uMTA3LjAyMWEuOTczLjk3MywwLDAsMC0uMjA2LjA0Mi45NDIuOTQyLDAsMCwwLS4xNjQuMDc1Ljg2MS44NjEsMCwwLDAtLjE2Mi4xMDkuOS45LDAsMCwwLS4xMzYuMTQ2Ljg2MS44NjEsMCwwLDAtLjA3Ny4wODNsLTgsMTNjLS4wMTMuMDIxLS4wMTMuMDQ2LS4wMjUuMDY4YTEuMzEsMS4zMSwwLDAsMC0uMTA4LjM4M2MwLC4wMjUtLjAxNS4wNDctLjAxNS4wNzN2MS42YTUuMzg3LDUuMzg3LDAsMCwwLDQsNS4xODl2MjUuMjA2aC0zYTEsMSwwLDAsMCwwLDJoNDZhMSwxLDAsMCwwLDAtMmgtM3YtMjUuMjA2QTUuMzg3LDUuMzg3LDAsMCwwLDE0MDgsMjU1MS4zODZabS01LjM5NCwzLjRoLS4yMTFhMy40LDMuNCwwLDAsMS0zLjQtMy40di0xLjZhLjkxOC45MTgsMCwwLDAtLjAzNS0uMTczLjk3OC45NzgsMCwwLDAtLjAzMS0uMTg2bC00LjQ3OC0xMS42NDFoMy45ODVsNy41NTksMTIuMjgzdjEuMzIyQTMuNCwzLjQsMCwwLDEsMTQwMi42MDYsMjU1NC43ODFaTTEzNzEsMjU0OS45NjhsNC42ODctMTIuMTg3aDQuMTQ4bC0xLjgyMywxMS44NDhjMCwuMDI2LjAwNS4wNSwwLC4wNzZzLS4wMTUuMDQ5LS4wMTUuMDc2djEuNmEzLjQsMy40LDAsMCwxLTMuMzk0LDMuNGgtLjIxMWEzLjQsMy40LDAsMCwxLTMuNC0zLjRabTktLjExMSwxLjg1OC0xMi4wNzZoNC4yODRsMS44NTgsMTIuMDc2djEuMDQxYTMuODg3LDMuODg3LDAsMCwxLTMuODgzLDMuODgzaC0uMjM0QTMuODg3LDMuODg3LDAsMCwxLDEzODAsMjU1MC45Wm0xMCwxLjA0MXYtMS4xMTdjMC0uMDI3LS4wMTMtLjA0OS0uMDE1LS4wNzZzLjAwNy0uMDUsMC0uMDc2bC0xLjgyMi0xMS44NDhoNC4xNDdsNC42ODcsMTIuMTg3djEuNDE4YTMuNCwzLjQsMCwwLDEtMy4zOTQsMy40aC0uMjExYTMuNCwzLjQsMCwwLDEtMy40LTMuNFptLTI4LC40ODh2LTEuMzIybDcuNTU5LTEyLjI4M2gzLjk4NWwtNC40NzgsMTEuNjQxYS45NzUuOTc1LDAsMCwwLS4wMzEuMTg3LjkwOC45MDgsMCwwLDAtLjAzNS4xNzJ2MS42YTMuNCwzLjQsMCwwLDEtMy4zOTQsMy40aC0uMjExQTMuNCwzLjQsMCwwLDEsMTM2MiwyNTUxLjM4NlptOSwzMC40di0xMWg2djExWm04LDB2LTEyYTEsMSwwLDAsMC0xLTFoLThhMSwxLDAsMCwwLTEsMXYxMmgtM3YtMjUuMDRhNS4wMTUsNS4wMTUsMCwwLDEsOC40LjA0aC4yMTFhNS4zODYsNS4zODYsMCwwLDAsNC41MDktMi40NSw1Ljg3NCw1Ljg3NCwwLDAsMCw0Ljc2OCwyLjQ1aC4yMzRhNS44NzMsNS44NzMsMCwwLDAsNC43NjgtMi40NSw1LjM4Nyw1LjM4NywwLDAsMCw0LjUxLDIuNDVoLjIxMWE1LjAxNSw1LjAxNSwwLDAsMSw4LjM5NC0uMDR2MjUuMDRaIiBmaWxsPSIjZDM4MjBmIi8+DQogICAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzU5IiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCA1OSIgZD0iTTEzOTksMjU1OC43ODFoLTE2YTEsMSwwLDAsMC0xLDF2MTlhMSwxLDAsMCwwLDEsMWgxNmExLDEsMCwwLDAsMS0xdi0xOUExLDEsMCwwLDAsMTM5OSwyNTU4Ljc4MVptLTEsMTloLTE0di0xN2gxNFoiIGZpbGw9IiNkMzgyMGYiLz4NCiAgICAgIDxwYXRoIGlkPSLQmtC+0L3RgtGD0YBfNjAiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDYwIiBkPSJNMTM3OCwyNTU4Ljc4MWgtOGExLDEsMCwwLDAtMSwxdjZhMSwxLDAsMCwwLDEsMWg4YTEsMSwwLDAsMCwxLTF2LTZBMSwxLDAsMCwwLDEzNzgsMjU1OC43ODFabS0xLDZoLTZ2LTRoNloiIGZpbGw9IiNkMzgyMGYiLz4NCiAgICAgIDxwYXRoIGlkPSLQmtC+0L3RgtGD0YBfNjEiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDYxIiBkPSJNMTM5MiwyNTc1Ljc4MWgzYTEsMSwwLDAsMCwxLTF2LTNhMSwxLDAsMCwwLTIsMHYyaC0yYTEsMSwwLDAsMCwwLDJaIiBmaWxsPSIjZDM4MjBmIi8+DQogICAgPC9nPg0KICA8L2c+DQo8L3N2Zz4NCg==);
 }
+===============================================================================================================================================================
+
 
 // Блок с косыми блоками внутри и картинкой
 .services {
@@ -321,3 +325,55 @@
 	width: 200px;
 	background: #FCA01F;
 }
+// ==============================================================================================================================================================
+
+
+// Карточки, показывают контент при наведении
+.card {
+  width: 300px;
+  height: 280px;
+  padding: 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card * {
+  transition: 0.3s ease all;
+}
+
+.card img {
+  margin: 0;
+  width: 300px;
+  height: 224px;
+  object-fit: cover;
+  display: block;
+}
+
+.card h3 {
+  margin: 0;
+  padding: 12px 12px 48px;
+  line-height: 32px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.card .focus-content {
+  display: block;
+  padding: 8px 12px;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.card:hover img, .card:focus-within img {
+  margin-top: -80px;
+}
+
+.card:hover h3, .card:focus-within h3 {
+  padding: 8px 12px 0;
+}
+// ==============================================================================================================================================================
