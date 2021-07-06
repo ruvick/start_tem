@@ -54,19 +54,17 @@ smotScrollElems.forEach(link => {
 
 // Полоса прокрутки в шапке
 const scrollProgress = document.getElementById('scroll-progress');
-const height =
-	document.documentElement.scrollHeight - document.documentElement.clientHeight;
+const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
 window.addEventListener('scroll', () => {
-	const scrollTop =
-		document.body.scrollTop || document.documentElement.scrollTop;
+	const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 	scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
 });
 
 
 // Строка поиска на мобилках 
-let mobsearch = document.querySelector(".mob-search");
-let headsearch = document.querySelector(".header__search");
+const mobsearch = document.querySelector(".mob-search");
+const headsearch = document.querySelector(".header__search");
 if (mobsearch) {
 	mobsearch.addEventListener("click", function () {
 		headsearch.classList.toggle("active");
