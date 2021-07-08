@@ -2,11 +2,15 @@
 // document.addEventListener('DOMContentLoaded', () => {
 // });
 
-//BURGER
+
 const iconMenu = document.querySelector(".icon-menu");
 const body = document.querySelector("body");
 const menuBody = document.querySelector(".mob-menu");
 const menuListItemElems = document.querySelector(".mob-menu__list");
+const mobsearch = document.querySelector(".mob-search");
+const headsearch = document.querySelector(".header__search");
+
+//BURGER
 if (iconMenu) {
 	iconMenu.addEventListener("click", function () {
 		iconMenu.classList.toggle("active");
@@ -24,13 +28,21 @@ if (menuListItemElems) {
 	});
 }
 
+// Строка поиска на мобилках 
+if (mobsearch) {
+	mobsearch.addEventListener("click", function () {
+		headsearch.classList.toggle("active");
+	});
+}
+
 // Закрытие моб меню при клике вне области меню 
 window.addEventListener('click', e => { // при клике в любом месте окна браузера
 	const target = e.target // находим элемент, на котором был клик
-	if (!target.closest('.icon-menu') && !target.closest('.mob-menu') && !target.closest('._popup-link') && !target.closest('.popup')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+	if (!target.closest('.icon-menu') && !target.closest('.mob-menu') && !target.closest('.mob-search') && !target.closest('.header__search') && !target.closest('._popup-link') && !target.closest('.popup')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
 		iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
 		menuBody.classList.remove('active')
 		body.classList.remove('lock')
+		headsearch.classList.remove('active')
 	}
 })
 
@@ -61,15 +73,6 @@ window.addEventListener('scroll', () => {
 	scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
 });
 
-
-// Строка поиска на мобилках 
-const mobsearch = document.querySelector(".mob-search");
-const headsearch = document.querySelector(".header__search");
-if (mobsearch) {
-	mobsearch.addEventListener("click", function () {
-		headsearch.classList.toggle("active");
-	});
-}
 
 // Ползунок выбора цены
 const priceEl = document.querySelector(".price");
